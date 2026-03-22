@@ -1,8 +1,14 @@
 import React from 'react'
+import RightCard from './RightCard'
 
-const ImageContainer = () => {
+const ImageContainer = (props) => {
   return (
-    <div className='h-full w-2/4 bg-amber-50'>ImageContainer</div>
+    <div className='h-full p-4 w-2/3 flex flex-nowrap gap-10 '>
+      {props.users.map(function(elem,idx){
+return <RightCard key={idx} id={idx} img={elem.img} tag={elem.tag}/>
+      })}
+     
+    </div>
   )
 }
 

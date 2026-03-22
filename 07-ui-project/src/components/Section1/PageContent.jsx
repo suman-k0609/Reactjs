@@ -2,11 +2,11 @@ import React from 'react'
 import LeftText from './LeftText'
 import ImageContainer from './ImageContainer'
 
-const PageContent = () => {
+const PageContent = (props) => {
   return (
-    <div className=' flex items-center gap-10 h-[90vh]  py-10 px-18'>
+    <div className=' flex items-center gap-10 h-[90vh]  px-18'>
        <LeftText />
-       <ImageContainer /> 
+       <ImageContainer users={props.users}/> 
 
     </div>
   )
