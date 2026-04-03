@@ -10,5 +10,5 @@ const LeftText = () => {
     </div>
   )
 }
-//export
+//export default left
 export default LeftText
